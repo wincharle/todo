@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Todo</title>
+	<link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+	<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+	<div class="container">
+		<h1>wincharle's todo</h1>
+		<form class="add-task">
+			<input type="text" name="text" placeholder="请添加内容" autofocus>
+			<button>submit</button>
+		</form>
+		<div class="task-list">
+		</div>
+		<div class="task-detail-mask"></div>
+		<form class="task-detail">
+			<div class="content">
+				<label><span>内容:</span><input type="text" autofocus></label>
+			</div>
+			<div>
+				<div class="desc">
+					<label><span>详情:</span><textarea name="text"></textarea></label>	
+				</div>
+			</div>
+			<div class="remind">
+				<label><span>开始时间:</span><input type="date" class="begin"></label>
+				<label><span>结束时间:</span><input type="date" class="end"></label>
+			</div>
+			<div class="submit">
+				<button type="submit">更新</button>
+			</div>
+		</form>		
+	</div>
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/store.js/store.js"></script>
+	<script src="js/base.js"></script>
+</body>
+</html>
